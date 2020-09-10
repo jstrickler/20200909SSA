@@ -2,7 +2,7 @@
 
 max_value = 26
 min_value = 0
-tries = 0
+tries = 1
 
 while True:
     guess = (max_value + min_value) // 2
