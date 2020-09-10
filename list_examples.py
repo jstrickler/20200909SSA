@@ -162,4 +162,5 @@ print('\n\n')
 for i in range(len(colors)):
     print(colors[i])
 
-
+if "blue" in colors:
+    print("it is in the list")
