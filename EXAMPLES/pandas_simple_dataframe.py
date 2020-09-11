@@ -3,7 +3,7 @@ import pandas as pd
 from printheader import print_header
 
 cols = ['alpha', 'beta', 'gamma', 'delta', 'epsilon']  # <1>
-indices = ['a', 'b', 'c', 'd', 'e', 'f']  # <2>
+rows = ['a', 'b', 'c', 'd', 'e', 'f']  # <2>
 
 values = [  # <3>
     [100, 110, 120, 130, 140],
@@ -16,13 +16,13 @@ values = [  # <3>
 print_header('cols')
 print(cols, '\n')
 
-print_header('indices')
-print(indices, '\n')
+print_header('rows')
+print(rows, '\n')
 
 print_header('values')
 print(values, '\n')
 
-df = pd.DataFrame(values, index=indices, columns=cols)  # <4>
+df = pd.DataFrame(values, index=rows, columns=cols)  # <4>
 print_header('DataFrame df')
 print(df, '\n')
 
